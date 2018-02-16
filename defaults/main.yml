@@ -1,0 +1,9 @@
+---
+# defaults file for network-config
+ansible_network_os: default
+
+# default path for backups
+backup_path: "{{ playbook_dir }}/backups"
+
+# default filename for backups
+filename: "{{ inventory_hostname_short }}"

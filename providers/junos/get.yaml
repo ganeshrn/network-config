@@ -1,0 +1,9 @@
+---
+- name: get running-config from junos device
+  cli_get:
+    command: show configuration
+  register: command_output
+
+- name: set fact running_config
+  set_fact:
+    running_config: "{{ command_output.stdout }}"

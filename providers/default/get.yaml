@@ -1,0 +1,4 @@
+---
+- name: unsupported provider
+  fail:
+    msg: "This network device is not supported"
